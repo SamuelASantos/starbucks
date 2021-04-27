@@ -1,0 +1,18 @@
+.banner {
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 90px 0;
+    @include container();
+    @include h(h1);
+    .banner--images {
+        margin-top: 60px;
+        img {
+            width: 148px;
+            height: 148px;
+            border: 6px solid $primary-color;
+            border-radius: 50%;
+            margin-right: 40px;
+        }
+    }
+}

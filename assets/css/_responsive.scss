@@ -1,0 +1,87 @@
+@media (min-width: 769px) and (max-width: 1140px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+    .area1 {
+        grid-template-columns: 3fr 2fr;
+    }
+    .area2 {
+        grid-template-columns: 2fr 3fr;
+    }
+    .area3 {
+        grid-template-columns: 3fr 2fr;
+    }
+}
+@media (max-width: 425px) {
+    .container {
+        padding: 0 20px;
+        @include h(h1responsive);
+    }
+    header {
+        .header--area {
+            .header--right {
+                .header--search {
+                    form {
+                        input {
+                            max-width: 140px;
+                        }
+                    }
+                }
+                .header--menu {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    .banner {
+        .banner--images {
+            img {
+                width: 70px;
+                height: 70px;
+                border: 3px solid $primary-color;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+        }
+    }
+    .area1 {
+        grid-template-columns: 1fr;
+        .area1--content {
+            padding: 40px;
+            @include h(h2responsive);
+        }
+    }
+    .area2 {
+        grid-template-columns: 1fr;
+        .area2--content {
+            padding: 40px;
+            @include h(h2responsive);
+        }
+    }
+    .area3 {
+        grid-template-columns: 1fr;
+        .area3--content {
+            padding: 40px;
+            @include h(h2responsive);
+        }
+    }
+    .area4 {
+        grid-template-columns: 1fr;
+        .area4--content {
+            padding: 40px;
+            @include h(h2responsive);
+        }
+    }
+    .area5 {
+        height: 250px;
+    }
+    footer {
+        font-size: 0.75rem;
+        padding: 40px 20px;
+    }
+}

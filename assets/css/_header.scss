@@ -1,0 +1,54 @@
+header{
+    @include container();
+    .line{
+        background-color: $primary-color;
+        height: 10px;
+    }
+    .header--area{
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+        height: 100px;
+        .header--left{
+            img{
+                width: 64px;
+                height: 64px;
+            }
+        }
+        .header--right{
+            display: flex;
+            align-items: center;
+            .header--search{
+                form{
+                    display: flex;
+                }
+                input{
+                    font-size:16px;
+                    padding: 8px 15px;
+                    border: 1px solid #888888;
+                    outline: 0; //RETIRA O AUTO-FOCUS DO INPUT
+                    width: 100%;
+                    max-width: 250px;
+                }
+                button{
+                    border: 0;
+                    background: transparent;
+                    margin-left: -30px; //TECNICA PAR COLOCAR A LUPA DENTRO DO INPUT TEXT
+                    cursor: pointer; //EFEITO DE MÃO AO PASSAR COM O MOUSE POR CIMA
+                    img{
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+            .header--menu {
+                margin-left: 70px;
+                cursor: pointer;
+                img {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+    }
+}

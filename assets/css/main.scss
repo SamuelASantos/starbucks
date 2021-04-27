@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Oswald:wght@400;700&display=swap');
+$primary-color: #117050;
+$secondary-color: #454545;
+$primary-font: 'Open Sans', sans-serif;
+$secondary-font: 'Oswald', sans-serif;
+
+@mixin container() {
+    .container {
+        max-width: 1140px;
+        margin: auto;
+    }
+}
+@mixin bar () {
+    .bar {
+        background-color: $primary-color;
+        width: 168px;
+        height: 22px;
+    }
+}
+@mixin h ($properties) {
+    @if ($properties) == h1 {
+        h1 {
+            font-size: 6rem;
+            font-weight: bold;
+            font-family: $secondary-font;
+            line-height: 1.1;
+            margin: 0 0 30px 0;
+        }
+    } @else if ($properties) == h2 {
+        h2 {
+            font-size: 2.25rem;
+            font-weight: bold;
+            font-family: $secondary-font;
+            line-height: 1.2;
+            margin: 20px 0;
+        }
+    } @else if ($properties) == h1responsive {
+        h1 {
+            font-size: 3.1rem;
+            line-height: 1.1;
+            font-weight: bold;
+            font-family: $secondary-font;
+        }
+        
+    } @else if ($properties) == h2responsive {
+        
+    }
+}
+@mixin btn() {
+    .button {
+        display: inline-block;
+        border: 2px solid $secondary-color;
+        padding: 10px 30px;
+        border-radius: 3px;
+        color: $secondary-color;
+        text-decoration: none;
+        &:hover {
+            color: #ffffff;
+            background-color: $secondary-color;
+        }
+    }
+}
+body{
+    margin: 0;
+    font-family: $primary-font;
+}
+@import 'header';
+@import 'banner';
+@import 'area1';
+@import 'area2';
+@import 'area3';
+@import 'area4';
+@import 'area5';
+@import 'footer';
+@import 'responsive';
